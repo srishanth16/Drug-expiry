@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-colors duration-200 bg-surface text-on-surface;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-on-surface tracking-tight;
+  }
+}
+
+/* Custom Scrollbar Styles for Clinical Precision theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f3ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c3c6d5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #003c90;
+}
+
+/* Glassmorphism style utility class (Light mode frosted glass) */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(195, 198, 213, 0.5);
+}
+
+/* Card Elevations */
+.card-level-1 {
+  @apply bg-white border border-outline-variant shadow-level-1 rounded-lg;
+}
+
+.card-level-2 {
+  @apply bg-white border border-outline-variant shadow-level-2 rounded-lg;
+}
+
+/* Status Chips */
+.chip-critical {
+  @apply bg-error-container text-on-error-container border border-error/20 font-semibold px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wide;
+}
+
+.chip-high {
+  @apply bg-orange-100 text-orange-700 border border-orange-500/20 font-semibold px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wide;
+}
+
+.chip-medium {
+  @apply bg-yellow-100 text-yellow-700 border border-yellow-500/20 font-semibold px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wide;
+}
+
+.chip-stable {
+  @apply bg-emerald-100 text-emerald-700 border border-emerald-500/20 font-semibold px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wide;
+}

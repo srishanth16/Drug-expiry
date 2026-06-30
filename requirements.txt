@@ -1,0 +1,12 @@
+Flask
+Flask-CORS
+pymongo
+python-dotenv
+PyJWT
+Werkzeug
+scikit-learn
+numpy
+pandas
+openpyxl
+Pillow
+google-generativeai
